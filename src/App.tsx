@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react"
+import { FormEvent, useEffect, useState } from "react"
 import { APIInformations } from "./components/APIInformations"
 import { api } from "./lib/axios"
 import { AppContainer, Card } from "./styles/pages/app"
@@ -13,13 +13,14 @@ export interface MoviesInformations {
   Genre: string;
   Plot: string;
   Actors: string;
+  Error: string;
 }
 
 export const App = () => {
-  const [movie, setMovie] = useState('')
+  const [movie, setMovie] = useState('wednesday')
   const [data, setData] = useState<MoviesInformations>({} as MoviesInformations)
 
-//  console.log(data)
+   console.log(data)
   const handleSearch = async (event: FormEvent) => {
     event.preventDefault()
 

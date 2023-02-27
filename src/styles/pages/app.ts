@@ -9,23 +9,22 @@ export const AppContainer = styled('div', {
 })
 export const Card = styled('div', {
   backgroundColor: '$blue500',
-  padding: '15px',
+  padding: '35px 25px',
   borderRadius: 8,
-  position: 'absolute',
-  transform: 'translate(-50%, -50%)',
-  top: '50%',
-  left: '50%',
+  width: '750px',
 
   form: {
-    display: 'grid',
-    gridTemplateColumns: '9fr 3fr',
-    gap: '1.2em',
+    display: 'flex',
+    gap: '50px',
     input: {
-      width: '400px',
+      width: '100%',
       backgroundColor: 'transparent',
       border: '1px solid #a0a0a0',
       color: '#fff',
-      padding: '0.7em',
+      height: '45px',
+      padding: '10px',
+      fontSize: '$md',
+      borderRadius: 8,
     },
     button: {
       backgroundColor: '$yellow',
@@ -33,7 +32,9 @@ export const Card = styled('div', {
       cursor: 'pointer',
       color: '$blue500',
       fontWeight: '700',
-      fontSize: '$sm'
+      fontSize: '$sm',
+      width: '250px',
+      borderRadius: 8,
     }
   }
 })
