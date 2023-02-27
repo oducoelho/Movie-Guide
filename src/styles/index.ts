@@ -12,7 +12,8 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      
+      blue500: '#1e293b',
+      yellow: '#ffb92a'
     },
 
     fontSizes: {
